@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:9999/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Bootstrap Example</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./Gowalla_5_checkins_count_files/bootstrap.min.css">
+    <script src="./Gowalla_5_checkins_count_files/jquery.min.js"></script>
+    <script src="./Gowalla_5_checkins_count_files/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+    </style>
+<style type="text/css">.backpack.dropzone {
+  font-family: 'SF UI Display', 'Segoe UI';
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 150px;
+  font-weight: lighter;
+  color: white;
+  will-change: right;
+  z-index: 2147483647;
+  bottom: 20%;
+  background: #333;
+  position: fixed;
+  user-select: none;
+  transition: left .5s, right .5s;
+  right: 0px; }
+  .backpack.dropzone .animation {
+    height: 80px;
+    width: 250px;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+  .backpack.dropzone .title::before {
+    content: 'Save to'; }
+  .backpack.dropzone.closed {
+    right: -250px; }
+  .backpack.dropzone.hover .animation {
+    animation: sxt-play-anim-hover 0.91s steps(21);
+    animation-fill-mode: forwards;
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/hoverstate.png") left center; }
+
+@keyframes sxt-play-anim-hover {
+  from {
+    background-position: 0px; }
+  to {
+    background-position: -5250px; } }
+  .backpack.dropzone.saving .title::before {
+    content: 'Saving to'; }
+  .backpack.dropzone.saving .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saving_loop.png") left center;
+    animation: sxt-play-anim-saving steps(59) 2.46s infinite; }
+
+@keyframes sxt-play-anim-saving {
+  100% {
+    background-position: -14750px; } }
+  .backpack.dropzone.saved .title::before {
+    content: 'Saved to'; }
+  .backpack.dropzone.saved .animation {
+    background: url("chrome-extension://lifbcibllhkdhoafpjfnlhfpfgnpldfl/assets/backpack/dropzone/saved.png") left center;
+    animation: sxt-play-anim-saved steps(20) 0.83s forwards; }
+
+@keyframes sxt-play-anim-saved {
+  100% {
+    background-position: -5000px; } }
+</style></head>
+<body data-gr-c-s-loaded="true">
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1>Online Store</h1>
+        <p>Mission, Vission &amp; Values</p>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://127.0.0.1:9999/#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="http://127.0.0.1:9999/#">Home</a></li>
+                <li><a href="http://127.0.0.1:9999/#">Products</a></li>
+                <li><a href="http://127.0.0.1:9999/#">Deals</a></li>
+                <li><a href="http://127.0.0.1:9999/#">Stores</a></li>
+                <li><a href="http://127.0.0.1:9999/#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://127.0.0.1:9999/#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="http://127.0.0.1:9999/#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_AMC_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.047088</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.048426</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.047393</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.044944</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_So_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.019757</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.021038</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.018444</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.018351</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_PFMMGM_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.024310</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.021087</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.022191</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.024384</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_MGM_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.017939</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.016054</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.017979</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.019555</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_FCFAMC_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.044312</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.044330</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.042770</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.039847</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_Geo_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.015571</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.013641</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.015237</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.016214</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_KDE_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.014165</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.015150</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.016426</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.016393</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_GeoSo_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.019627</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.018833</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.021665</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.022602</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_PFM_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.017496</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.018563</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.018255</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.015050</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_FCF_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.028022</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.028299</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.026777</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.026642</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_FCFKDEAMC_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.042556</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.042357</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.041338</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.039135</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <div class="panel panel-success">
+                <div class="panel-heading">Gowalla_KDEAMC_5_nDCG.html</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>checkin_count</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.046059</td>
+      <td>11.700782</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.045324</td>
+      <td>17.670931</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.046213</td>
+      <td>31.594883</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>0.042638</td>
+      <td>114.623312</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+
+    </div>
+</div>
+<br>
+
+
+<footer class="container-fluid text-center">
+    <p>Online Store Copyright</p>
+    <form class="form-inline">Get deals:
+        <input type="email" class="form-control" size="50" placeholder="Email Address">
+        <button type="button" class="btn btn-danger">Sign Up</button>
+    </form>
+</footer>
+
+
+</body></html>
