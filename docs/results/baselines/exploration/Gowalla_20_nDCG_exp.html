@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Gowalla_20_nDCG </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        /* Remove the navbar's default rounded borders and increase the bottom margin */
+        .navbar {
+            margin-bottom: 50px;
+            border-radius: 0;
+        }
+
+        /* Remove the jumbotron's default bottom margin */
+        .jumbotron {
+            margin-bottom: 0;
+        }
+
+        /* Add a gray background color and some padding to the footer */
+        footer {
+            background-color: #f2f2f2;
+            padding: 25px;
+        }
+        table {
+        color: black;
+        cellpadding: 10px;
+        }
+        th, td {
+        padding: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container text-center">
+        <h1> Gowalla </h1>
+        <p> 20 - nDCG </p>
+        <p> Exploration </p>
+    </div>
+</div>
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <div class="row">
+
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">PFM</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.018960</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.017648</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.015415</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.040437</td>
+      <td>0.002412</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">FCFAMC</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.060164</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.041728</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.026552</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.217871</td>
+      <td>1.886253e-61</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">FCF</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.038356</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.026410</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.017538</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.170866</td>
+      <td>3.923168e-38</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">MGM</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.029593</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.012541</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.011511</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.177608</td>
+      <td>4.138023e-41</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">Geo</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.024072</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.012331</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.009094</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.173149</td>
+      <td>3.973943e-39</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">KDEAMC</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.064498</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.041811</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.028867</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.235131</td>
+      <td>1.489597e-71</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">PFMMGM</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.035020</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.017643</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.016316</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.174383</td>
+      <td>1.137585e-39</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">AMC</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.066170</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.044718</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.029999</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.233694</td>
+      <td>1.114260e-70</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">GeoSo</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.033933</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.015567</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.012544</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.189805</td>
+      <td>8.360775e-47</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">KDE</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.023770</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.011639</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.011192</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.142833</td>
+      <td>4.865351e-27</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">So</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.024530</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.019147</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.014515</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.106477</td>
+      <td>1.157474e-15</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+        <div class="col-sm-5">
+            <div class="panel panel-success">
+                <div class="panel-heading">FCFKDEAMC</div>
+                <div class="panel-body">
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>ndcg</th>
+      <th>exploration_factor</th>
+    </tr>
+    <tr>
+      <th>slice_no</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0.058791</td>
+      <td>0.496610</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>0.039941</td>
+      <td>0.723933</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>0.025308</td>
+      <td>0.895167</td>
+    </tr>
+  </tbody>
+</table>
+                    <br>
+                    <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Pearsons correlation coefficient</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>-0.218423</td>
+      <td>9.240267e-62</td>
+    </tr>
+  </tbody>
+</table>
+                </div>
+<!--                <div class="panel-footer">Buy 50 mobiles and get a gift card</div>-->
+            </div>
+        </div>
+        
+    </div>
+</div>
+<br>
+
+
+<!--<footer class="container-fluid text-center">-->
+<!--    <p>Online Store Copyright</p>-->
+<!--    <form class="form-inline">Get deals:-->
+<!--        <input type="email" class="form-control" size="50" placeholder="Email Address">-->
+<!--        <button type="button" class="btn btn-danger">Sign Up</button>-->
+<!--    </form>-->
+<!--</footer>-->
+
+</body>
+</html>
