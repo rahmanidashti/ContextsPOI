@@ -24,7 +24,7 @@ If you find **ContextsPOI** useful for your research or development, please cite
 
 ```
 @inproceedings{rahmani2021ContextsPOI,
-  title={A Systematic Analysis on the Impact of Contextual Information onPoint-of-Interest Recommendation},
+  title={A Systematic Analysis on the Impact of Contextual Information on Point-of-Interest Recommendation},
   author={Hossein A. Rahmani, Mohammad Aliannejadi, Mitra Baratchi, Fabio Crestani},
   booktitle={TBA},
   year={2021}
