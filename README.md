@@ -1,6 +1,9 @@
 # ContextsPOI: Contextual Information on POI Recommendation
 
 
+![ContextsPOI](https://github.com/rahmanidashti/ContextImpact/blob/master/images/banner.png)
+
+
 ## User and Item Latent Feature Vectors
 run `embedding.py` in `MFEmbeder`
 
