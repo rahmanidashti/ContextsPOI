@@ -4,7 +4,22 @@
 ## User and Item Latent Feature Vectors
 run `embedding.py` in `MFEmbeder`
 
-## 📝 Citation
+## Prerequisites
+
+You will need below libraries to be installed before running the application:
+
+- Python >= 3.4
+- NumPy >= 1.19
+- SciPy >= 1.6
+- PyInquirer >= 1.0.3
+
+For a simple solution, you can simply run the below command in the root directory:
+
+```python
+pip install -r prerequisites.txt
+```
+
+## Citation
 If you find **ContextsPOI** useful for your research or development, please cite the following [paper](https://arxiv.org/):
 
 ```
@@ -16,7 +31,7 @@ If you find **ContextsPOI** useful for your research or development, please cite
 }
 ```
 
-## ⚠️ TODOs
+## TODOs
 - final version code release after the acceptance of the paper
 
 
