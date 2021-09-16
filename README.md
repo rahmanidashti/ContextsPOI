@@ -21,13 +21,10 @@ If you find **ContextsPOI** useful for your research or development, please cite
 
 
 ## Team
-Hossein A. Rahmani, Web Intelligence (WI) Group, University College London, United Kingdom (h.rahmnai@ucl.ac.uk)
-
-Mohammad Aliannejadi, IRLab, University of Amsterdam, The Netherlands (m.aliannejadi@uva.nl)
-
-Mitra Baratchi, ADA Research Group, Leiden University, The Netherlands (m.baratchi@liacs.leidenuniv.nl)
-
-Fabio Crestani, IR-USI, Università della Svizzera italiana (USI), Switzerland (fabio.crestani@usi.ch)
+* Hossein A. Rahmani, Web Intelligence (WI) Group, University College London, United Kingdom (h.rahmnai@ucl.ac.uk)
+* Mohammad Aliannejadi, IRLab, University of Amsterdam, The Netherlands (m.aliannejadi@uva.nl)
+* Mitra Baratchi, ADA Research Group, Leiden University, The Netherlands (m.baratchi@liacs.leidenuniv.nl)
+* Fabio Crestani, IR-USI, Università della Svizzera italiana (USI), Switzerland (fabio.crestani@usi.ch)
 
 ## Acknowledgements
 TBA
