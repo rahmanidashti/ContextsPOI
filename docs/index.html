@@ -48,11 +48,11 @@
         <div class="container">
 
             <!-- Text Logo - Use this if you don't have a graphic logo -->
-            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+             <a class="navbar-brand logo-text page-scroll" href="index.html">Contexts on POI</a> 
 
             <!-- Image Logo -->
 <!--            <a class="navbar-brand logo-image" href="index.html"><img src="images/logo.svg" alt="alternative"></a> -->
-                <a class="navbar-brand logo-image" href="index.html">Context on POI</a> 
+                
             
             <!-- Mobile Menu Toggle Button -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -67,10 +67,13 @@
                         <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#findings">FINDINGS</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link page-scroll" href="#features">SOURCES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link page-scroll" href="#details">DETAILS</a>
+                        <a class="nav-link page-scroll" href="#about-us">About US</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="#pricing">PRICING</a>
@@ -141,7 +144,6 @@
                         </div> <!-- end of swiper container -->
                     </div> <!-- end of slider-container -->
                     <!-- end of image slider -->
-
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
         </div> <!-- end of container -->
@@ -149,12 +151,12 @@
     <!-- end of customers -->
 
     <!-- Description -->
-    <div class="cards-1">
+    <div id="findings" class="cards-1">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="above-heading">DESCRIPTION</div>
-                    <h2 class="h2-heading">Marketing Automation Will Bring More Qualified Leads</h2>
+                    <div class="above-heading">Findings</div>
+                    <h2 class="h2-heading">A sentence that shows the main finding</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -166,8 +168,8 @@
                             <img class="img-fluid" src="images/description-1.png" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Lists Builder</h4>
-                            <p>It's very easy to start creating email lists for your marketing actions. Just create your Tivo account</p>
+                            <h4 class="card-title">Finding 1</h4>
+                            <p>A description of finding 1</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -178,8 +180,8 @@
                             <img class="img-fluid" src="images/description-2.png" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Campaign Tracker</h4>
-                            <p>Campaigns is a feature we've developed since the beginning because it's at the core of Tivo's functionalities</p>
+                            <h4 class="card-title">Finding 2</h4>
+                            <p>A description of finding 2</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -190,8 +192,8 @@
                             <img class="img-fluid" src="images/description-3.png" alt="alternative">
                         </div>
                         <div class="card-body">
-                            <h4 class="card-title">Analytics Tool</h4>
-                            <p>Tivo collects customer data in order to help you analyse different situations and take required action</p>
+                            <h4 class="card-title">Finding 3</h4>
+                            <p>A description of finding 3</p>
                         </div>
                     </div>
                     <!-- end of card -->
@@ -208,8 +210,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="above-heading">Analytics</div>
-                    <h2 class="h2-heading">Checkins Count and Exploration</h2>
+                    <div class="above-heading">Sources</div>
+                    <h2 class="h2-heading">Framework and Datasets</h2>
 <!--                    <p class="p-heading">Here you can fin our analysis.</p>-->
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -219,10 +221,10 @@
                     <!-- Tabs Links -->
                     <ul class="nav nav-tabs" id="argoTabs" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>Checkins Count</a>
+                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>Framework</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-envelope-open-text"></i>Exploration</a>
+                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-envelope-open-text"></i>Dataset</a>
                         </li>
                     </ul>
                     <!-- end of tabs links -->
@@ -234,70 +236,6 @@
                         <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                             <div class="row">
                                 
-                                 <div class="col-lg-4">
-                                    <span>Baselines</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/checkinsCount/gowalla/Gowalla_5_nDCG.htm" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/checkinsCount/gowalla/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/checkinsCount/gowalla/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/checkinsCount/gowalla/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/checkinsCount/yelp/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/checkinsCount/yelp/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/checkinsCount/yelp/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/checkinsCount/yelp/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>MF</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/checkinCount/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/checkinCount/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/checkinCount/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/checkinCount/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/checkinCount/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/checkinCount/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/checkinCount/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/checkinCount/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                    
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>NN</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/checkinCount/gowalla/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/checkinCount/gowalla/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/checkinCount/gowalla/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/checkinCount/gowalla/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/checkinCount/yelp/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/checkinCount/yelp/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/checkinCount/yelp/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/checkinCount/yelp/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
                                
                             </div> <!-- end of row -->
                         </div> <!-- end of tab-pane -->
@@ -307,66 +245,16 @@
                         <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
                             <div class="row">
                                 <div class="col-lg-4">
-                                    <span>Baselines</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/exploration/Gowalla_5_nDCG_exp.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/exploration/Gowalla_10_nDCG_exp.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/exploration/Gowalla_15_nDCG_exp.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/exploration/Gowalla_20_nDCG_exp.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/exploration/Yelp_5_nDCG_exp.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/exploration/Yelp_10_nDCG_exp.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/exploration/Yelp_15_nDCG_exp.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/exploration/Yelp_20_nDCG_exp.html" target="_blank">Yelp-20</a>
+
                                 <!-- end of text-container -->
                                 </div> <!-- end of col -->
                                 
                                 <div class="col-lg-4">
-                                    <span>MF</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/exploration/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/exploration/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/exploration/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/exploration/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/exploration/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/exploration/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/exploration/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/exploration/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
                                     
                                 <!-- end of text-container -->
                                 </div> <!-- end of col -->
                                 
                                 <div class="col-lg-4">
-                                    <span>NN</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/exploration/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/exploration/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/exploration/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/exploration/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/exploration/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/exploration/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/exploration/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/exploration/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
                                 <!-- end of text-container -->
                                 </div> <!-- end of col --> 
                             </div>  <!-- end of row -->
@@ -380,643 +268,19 @@
     </div> <!-- end of tabs -->
     </div>
     <!-- end of features -->
-    
-     <!-- Features -->
-    <div id="features" class="tabs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="above-heading">Analytics</div>
-                    <h2 class="h2-heading">Temporal: Sum, Std, Mean</h2>
-<!--                    <p class="p-heading">Here you can download our source codes and datasets to repreduce the results and make use of them in your analysis.</p>-->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Tabs Links -->
-                    <ul class="nav nav-tabs" id="argoTabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="true"><i class="fas fa-list"></i>Baselines</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-tab-4" data-toggle="tab" href="#tab-4" role="tab" aria-controls="tab-4" aria-selected="false"><i class="fas fa-envelope-open-text"></i>MF</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-tab-5" data-toggle="tab" href="#tab-5" role="tab" aria-controls="tab-5" aria-selected="false"><i class="fas fa-chart-bar"></i>NN</a>
-                        </li>
-                    </ul>
-                    <!-- end of tabs links -->
-
-                    <!-- Tabs Content -->
-                    <div class="tab-content" id="argoTabsContent">
-
-                        <!-- Tab -->
-                        <div class="tab-pane fade show active" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                    
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <span>Sum</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/sum/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/sum/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/sum/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/sum/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/sum/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/sum/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/sum/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/sum/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Std</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/std/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/std/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/std/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/std/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/std/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/std/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/std/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/std/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                    
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Mean</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/mean/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/mean/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/mean/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/mean/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/mean/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/mean/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/mean/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/mean/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                            </div>  <!-- end of row --> 
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
-
-                        <!-- Tab -->
-                        <div class="tab-pane fade" id="tab-4" role="tabpanel" aria-labelledby="tab-4">
-                            <div class="row">
-                               
-                                <div class="col-lg-4">
-                                    <span>Sum</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/sum/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/sum/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/sum/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/sum/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/sum/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/sum/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/sum/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/sum/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Std</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/std/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/std/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/std/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/std/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/std/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/std/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/std/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/std/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                    
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Mean</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/mean/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/mean/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/mean/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/mean/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/mean/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/mean/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/mean/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/temporal/mean/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->    
-                                
-                                
-                            </div> <!-- end of row -->
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
-
-                        <!-- Tab -->
-                        <div class="tab-pane fade" id="tab-5" role="tabpanel" aria-labelledby="tab-5">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <span>Sum</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/sum/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/sum/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/sum/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/sum/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/sum/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/sum/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/sum/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/sum/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Std</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/std/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/std/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/std/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/std/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/std/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/std/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/std/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/std/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                    
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Mean</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/mean/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/mean/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/mean/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/mean/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/mean/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/mean/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/mean/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/temporal/mean/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                            </div> <!-- end of row -->
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
-                    </div> <!-- end of tab content -->
-                    <!-- end of tabs content -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of tabs -->
-    <!-- end of features -->
-        
-    <!-- Features -->
-    <div id="features" class="tabs">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="above-heading">Analytics</div>
-                    <h2 class="h2-heading">Geographical: Sum, Std, Mean</h2>
-<!--                    <p class="p-heading">Here you can download our source codes and datasets to repreduce the results and make use of them in your analysis.</p>-->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-                <div class="col-lg-12">
-
-                    <!-- Tabs Links -->
-                    <ul class="nav nav-tabs" id="argoTabs" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="nav-tab-6" data-toggle="tab" href="#tab-6" role="tab" aria-controls="tab-6" aria-selected="true"><i class="fas fa-list"></i>Baselines</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-tab-7" data-toggle="tab" href="#tab-7" role="tab" aria-controls="tab-7" aria-selected="false"><i class="fas fa-envelope-open-text"></i>MF</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="nav-tab-8" data-toggle="tab" href="#tab-8" role="tab" aria-controls="tab-8" aria-selected="false"><i class="fas fa-chart-bar"></i>NN</a>
-                        </li>
-                    </ul>
-                    <!-- end of tabs links -->
-
-                    <!-- Tabs Content -->
-                    <div class="tab-content" id="argoTabsContent">
-
-                        <!-- Tab -->
-                        <div class="tab-pane fade show active" id="tab-6" role="tabpanel" aria-labelledby="tab-6">
-                    
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <span>Sum</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/sum/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/sum/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/sum/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/sum/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/sum/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/sum/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/sum/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/sum/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Std</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/std/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/std/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/std/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/std/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/std/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/std/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/std/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/temporal/std/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                    
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Mean</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/mean/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/mean/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/mean/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/mean/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/mean/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/mean/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/mean/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/baselines/geographical/mean/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                            </div>  <!-- end of row --> 
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
-
-                        <!-- Tab -->
-                        <div class="tab-pane fade" id="tab-7" role="tabpanel" aria-labelledby="tab-7">
-                            <div class="row">
-                                
-                                <div class="col-lg-4">
-                                    <span>Sum</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/sum/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/sum/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/sum/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/sum/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/sum/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/sum/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/sum/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/sum/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Std</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/std/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/std/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/std/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/std/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/std/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/std/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/std/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/std/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                    
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Mean</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/mean/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/mean/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/mean/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/mean/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/mean/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/mean/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/mean/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/mfs/geographical/mean/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                            </div> <!-- end of row -->
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
-
-                        <!-- Tab -->
-                        <div class="tab-pane fade" id="tab-8" role="tabpanel" aria-labelledby="tab-8">
-                            <div class="row">
-                                 <div class="col-lg-4">
-                                    <span>Sum</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/sum/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/sum/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/sum/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/sum/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/sum/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/sum/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/sum/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/sum/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Std</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/std/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/std/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/std/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/std/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/std/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/std/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/std/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/std/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                    
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                                
-                                <div class="col-lg-4">
-                                    <span>Mean</span>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/mean/Gowalla_5_nDCG.html" target="_blank">Gowalla-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/mean/Gowalla_10_nDCG.html" target="_blank">Gowalla-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/mean/Gowalla_15_nDCG.html" target="_blank">Gowalla-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/mean/Gowalla_20_nDCG.html" target="_blank">Gowalla-20</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/mean/Yelp_5_nDCG.html" target="_blank">Yelp-5</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/mean/Yelp_10_nDCG.html" target="_blank">Yelp-10</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/mean/Yelp_15_nDCG.html" target="_blank">Yelp-15</a>
-                                    <br>
-                                    <a class="btn-solid-reg popup-with-move-anim" href="results/nns/geographical/mean/Yelp_20_nDCG.html" target="_blank">Yelp-20</a>
-                                <!-- end of text-container -->
-                                </div> <!-- end of col -->
-                            </div> <!-- end of row -->
-                        </div> <!-- end of tab-pane -->
-                        <!-- end of tab -->
-                    </div> <!-- end of tab content -->
-                    <!-- end of tabs content -->
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of tabs -->
-    <!-- end of features -->
-
-    <!-- Details Lightboxes -->
-    <!-- Details Lightbox 1 -->
-	<div id="details-lightbox-1" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="container">
-            <div class="row">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-lightbox.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <h3>List Building</h3>
-                    <hr>
-                    <h5>Core service</h5>
-                    <p>It's very easy to start using Tivo. You just need to fill out and submit the Sign Up Form and you will receive access to the app.</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">List building framework</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Easy database browsing</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">User administration</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Automate user signup</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Quick formatting tools</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Fast email checking</div>
-                        </li>
-                    </ul>
-                    <a class="btn-solid-reg mfp-close" href="sign-up.html">SIGN UP</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 1 -->
-
-    <!-- Details Lightbox 2 -->
-	<div id="details-lightbox-2" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="container">
-            <div class="row">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-lightbox.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <h3>Campaign Monitoring</h3>
-                    <hr>
-                    <h5>Core service</h5>
-                    <p>It's very easy to start using Tivo. You just need to fill out and submit the Sign Up Form and you will receive access to the app.</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">List building framework</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Easy database browsing</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">User administration</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Automate user signup</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Quick formatting tools</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Fast email checking</div>
-                        </li>
-                    </ul>
-                    <a class="btn-solid-reg mfp-close" href="sign-up.html">SIGN UP</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 2 -->
-
-    <!-- Details Lightbox 3 -->
-	<div id="details-lightbox-3" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <div class="container">
-            <div class="row">
-                <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-                <div class="col-lg-8">
-                    <div class="image-container">
-                        <img class="img-fluid" src="images/details-lightbox.png" alt="alternative">
-                    </div> <!-- end of image-container -->
-                </div> <!-- end of col -->
-                <div class="col-lg-4">
-                    <h3>Analytics Tools</h3>
-                    <hr>
-                    <h5>Core service</h5>
-                    <p>It's very easy to start using Tivo. You just need to fill out and submit the Sign Up Form and you will receive access to the app.</p>
-                    <ul class="list-unstyled li-space-lg">
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">List building framework</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Easy database browsing</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">User administration</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Automate user signup</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Quick formatting tools</div>
-                        </li>
-                        <li class="media">
-                            <i class="fas fa-square"></i><div class="media-body">Fast email checking</div>
-                        </li>
-                    </ul>
-                    <a class="btn-solid-reg mfp-close" href="sign-up.html">SIGN UP</a> <a class="btn-outline-reg mfp-close as-button" href="#screenshots">BACK</a>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
-    </div> <!-- end of lightbox-basic -->
-    <!-- end of details lightbox 3 -->
-    <!-- end of details lightboxes -->
 
     <!-- Testimonials -->
-    <div class="slider-2">
+    <div id="about-us" class="slider-2">
         <div class="container">
+                        <div class="row">
+                <div class="col-lg-12">
+                    <div class="above-heading">About US!</div>
+                    <h2 class="h2-heading" style="text-align: center">Our Group</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
             <div class="row">
                 <div class="col-lg-12"> 
+                    
                     <!-- Text Slider -->
                     <div class="slider-container">
                         <div class="swiper-container text-slider">
@@ -1032,6 +296,8 @@
                                             Hossein A. Rahmani is a visiting researcher at the Universita della Svizzera Italiana (USI) during this project. He recived his BSc in Software Engineering at the University of Zanjan, Iran, in 2016. Currently, he is a master's student at the University of Zanjan, Iran. He is interested in problems at the intersection of Machine Learning, Data Analysis and BigData as well as Data Mining. He is currently working on Point-of-Interest recommender systems, a project to recommend locations in location-based social networks.
                                         </div>
                                         <div class="testimonial-author">Hossein A. Rahmani - Universita della Svizzera Italiana</div>
+                                        <div><a href="mailto:srahmani@znu.ac.ir">h.rahmani@ucl.ac.uk</a></div>
+                                        
                                     </div> <!-- end of text-wrapper -->
                                 </div> <!-- end of swiper-slide -->
                                 <!-- end of slide -->
@@ -1095,7 +361,7 @@
                 <div class="col-md-4">
                     <div class="footer-col first">
                         <h4>About US</h4>
-                        <p class="p-small">We are a group of researchers from the Universita della Svizzera italiana (USI), University of Zanjan, University of Amsterdam, and Leiden University</p>
+                        <p class="p-small">We are a group of researchers from the University College London, Universita della Svizzera italiana (USI), University of Amsterdam, and Leiden University</p>
                     </div>
                 </div> <!-- end of col -->
                 <div class="col-md-4">
@@ -1119,12 +385,12 @@
                         <ul class="list-unstyled li-space-lg p-small">
                             <li class="media">
                                 <i class="fas fa-map-marker-alt"></i>
-                                <div class="media-body">University of Zanjan, Iran</div>
+                                <div class="media-body">University College London, United Kingdom</div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-envelope"></i>
                                 <div class="media-body">
-                                    <a class="white" href="mailto:srahmani@znu.ac.ir">srahmani@znu.ac.ir</a>
+                                    <a class="white" href="mailto:srahmani@znu.ac.ir">h.rahmani@ucl.ac.uk</a>
                                 </div>
                             </li>
                             <li class="media">
@@ -1147,7 +413,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik (Hossein A. Rahmani)</a></p>
+                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com">Template by Inovatik - Hossein A. Rahmani</a></p>
                 </div> <!-- end of col -->
             </div> <!-- enf of row -->
         </div> <!-- end of container -->
