@@ -35,6 +35,7 @@ If you find **ContextsPOI** useful for your research or development, please cite
 ```
 
 ## TODOs
+- [X] The release of base models source codes
 - [ ] final version code release after the acceptance of the paper
 - [ ] User behaviour analysis part will be available after the acceptance of the paper.
 
