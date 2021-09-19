@@ -108,9 +108,9 @@ def main():
                     Cat_results[uid, lid] = CC.predict(uid, lid)
 
     np.save("../model_combiner/contexts/" + dataset + "/G.npy", Geo_results)
-    np.save("../model_combiner/contexts/" + dataset + "T.npy", Temp_results)
-    np.save("../model_combiner/contexts/" + dataset + "S.npy", So_results)
-    np.save("../model_combiner/contexts/" + dataset + "C.npy", Cat_results)
+    np.save("../model_combiner/contexts/" + dataset + "/T.npy", Temp_results)
+    np.save("../model_combiner/contexts/" + dataset + "/S.npy", So_results)
+    np.save("../model_combiner/contexts/" + dataset + "/C.npy", Cat_results)
 
 
 if __name__ == '__main__':
