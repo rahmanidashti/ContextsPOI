@@ -9,8 +9,8 @@
 
 1. At first step, we need to run the contextual models to get the preference scores of users on POIs based on each contextual influence. To do this, we provide all the contextual models in the `contextsModels` package which are in `lib`. When you run `saveScores.py`, all contextual models which are located in `lib` compute the users' preference score, then they will be saved as `NumPy arrays (.npy)` in `/model_combiner/contexts/dataset` and the dataset can be `Yelp` or `Gowalla`, indicates on which dataset your run the models and get these results. The size of these produces `NumPy arrays` is equal to `user_num * poi_num`.
 2. The second step is the embedding of users and POIs that we need them as for the embedding layer of user and POIs in Neural Network based approaches. To embed the user and location into the leaten feature space, you can run the `embedding.py` from the `MFEmbedder` package. the output is two Numpy arrays `U.npy` and `L.npy` which are saved in `/embeddings/dataset/`. 
-3. XXX
-4. XXXX
+3. Run the base models (MF and NN) to achive results on linear and non-linear mdoels. (details soon)
+4. Combine all possible combinatino of MF and NN models with contextual models separetly. (details soon)
 
 ## User and Item Latent Feature Vectors
 run `embedding.py` in `MFEmbeder`
