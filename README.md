@@ -7,7 +7,7 @@
 
 **All of the codes to run the models and processing are located in `codes` folder.**
 
-1. The first step is to run the contextual models to get the preference scores of users on POIs based on each contextual infoluence. To do this, we provide all the contextual models in the `lib` packages which is in `contextsModels`. When you run `saveScores.py`, all contextual models which are located in `lib` compute the users' preference score then they will be saved as `numpy` arrays in `/model_combiner/contexts/" + dataset` and `dataset` indicates on which dataset your run the models and get these results. The size of these produces numpy arrays is equal to `user_num` * `poi_num`. 
+1. The first step is to run the contextual models to get the preference scores of users on POIs based on each contextual infoluence. To do this, we provide all the contextual models in the `lib` packages which is in `contextsModels`. When you run `saveScores.py`, all contextual models which are located in `lib` compute the users' preference score then they will be saved as `numpy` arrays in `/model_combiner/contexts/dataset` and `dataset` can be `Yelp` or `Gowalla`, indicates on which dataset your run the models and get these results. The size of these produces numpy arrays is equal to `user_num` * `poi_num`. 
 2. XX
 3. XXX
 4. XXXX
