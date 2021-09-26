@@ -12,9 +12,6 @@
 3. Run the base models (MF and NN) to achive results on linear and non-linear mdoels. (details soon)
 4. Combine all possible combinatino of MF and NN models with contextual models separetly. (details soon)
 
-## User and Item Latent Feature Vectors
-run `embedding.py` in `MFEmbeder`
-
 ## Prerequisites
 
 You will need below libraries to be installed before running the application:
