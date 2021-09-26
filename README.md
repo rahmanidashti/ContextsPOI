@@ -3,6 +3,11 @@
 
 ![ContextsPOI](https://github.com/rahmanidashti/ContextImpact/blob/master/images/banner.png)
 
+## How to run the framework?
+1. X
+2. XX
+3. XXX
+4. XXXX
 
 ## User and Item Latent Feature Vectors
 run `embedding.py` in `MFEmbeder`
