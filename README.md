@@ -12,14 +12,16 @@
 3. Run the base models (MF and NN) to achive results on linear and non-linear models. To do this, you can run `main.py` in `codes` and save the results automatically to `Numpy arrays`. All of this process will be done automatically with code, for example, for `Neural Network` based models the code first loads  the `embedding` vectors of users and items.
 4. Combine all possible combination of MF and NN models with contextual models separately. In order to combine differenc contextual models with each other and also linear and non-linear models we can use the code on the `model_cobiner` package. What we need to do is to config the model to evaluate models and context. In `model_combiner.py` we can define our specific configuration, we can select the dataset, base models, contextual models. Then, the results will be written under the `results` folder.
 
+In the next version of our codes, we are going to make it easier to run, using the command-line arguments.
+
 ## Prerequisites
 
 You will need below libraries to be installed before running the application:
 
-- Python >= 3.4
-- NumPy >= 1.19
-- SciPy >= 1.6
-- PyInquirer >= 1.0.3
+- Python >= 3.8
+- Numpy >= 1.17.3
+- Tensorflow >= 2.2.0
+- SciPy >= 1.4.1
 
 For a simple solution, you can simply run the below command in the root directory:
 
@@ -42,9 +44,9 @@ If you find **ContextsPOI** useful for your research or development, please cite
 ## TODOs
 - [X] The release of base models source codes
 - [X] Add context models to save the scores
-- [ ] Add command-line run for the context models 
-- [ ] final version code release after the acceptance of the paper
+- [X] final version code release after the acceptance of the paper
 - [ ] User behaviour analysis part will be available after the acceptance of the paper.
+- [ ] Add command-line run for the context models
 
 
 ## Team
