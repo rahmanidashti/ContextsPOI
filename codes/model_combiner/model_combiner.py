@@ -1,33 +1,17 @@
 import numpy as np
 import os
 from collections import defaultdict
-from itertools import chain, combinations
 from libs.metrics import precisionk, recallk, ndcgk, mapk
-
-
-def find_subsets(iterable):
-    """
-    If you don't like that empty tuple at the beginning, you can just change the range
-    statement to range(1, len(s)+1) to avoid a 0-length combination.
-    :param iterable:
-    :return:
-    """
-    " powerset([1,2,3]) --> () (1,) (2,) (3,) (1,2) (1,3) (2,3) (1,2,3)"
-    s = list(iterable)
-    return chain.from_iterable(combinations(s, r) for r in range(1, len(s) + 1))
 
 
 def read_training_data():
     # load train data
     train_data = open(train_file, 'r').readlines()
-    # sparse_training_matrix = sparse.dok_matrix((user_num, poi_num))
     training_tuples = set()
     for eachline in train_data:
         uid, lid, freq = eachline.strip().split()
         uid, lid, freq = int(uid), int(lid), int(freq)
-        # sparse_training_matrix[uid, lid] = freq
         training_tuples.add((uid, lid))
-
     return training_tuples
 
 

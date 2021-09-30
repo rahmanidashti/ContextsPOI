@@ -1,5 +1,5 @@
-from libs.add_negative import AddNegative
-from libs.evaluation import Evaluation
+from ..libs.add_negative import AddNegative
+from ..libs.evaluation import Evaluation
 import time
 import numpy as np
 

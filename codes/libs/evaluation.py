@@ -1,9 +1,7 @@
 import numpy as np
 import scipy.sparse as sparse
-
 from collections import defaultdict
-
-from libs.metrics import precisionk, recallk, ndcgk, mapk
+from ..libs.metrics import precisionk, recallk, ndcgk, mapk
 
 
 class Evaluation:
