@@ -198,8 +198,7 @@
         </div> <!-- end of container -->
     </div> <!-- end of cards-1 -->
     <!-- end of description -->
-
-
+    
     <!-- Features -->
     <div id="features" class="tabs">
         <div class="container">
@@ -208,7 +207,7 @@
                     <div class="above-heading">
                         Sources
                     </div>
-                    <h2 class="h2-heading">Framework and Datasets</h2>
+                    <h2 class="h2-heading">Results</h2>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
             <div class="row">
@@ -217,7 +216,7 @@
                     <!-- Tabs Links -->
                     <ul class="nav nav-tabs" id="argoTabs" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>Framework</a>
+                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>Baselines</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-envelope-open-text"></i>Dataset</a>
@@ -225,14 +224,389 @@
                     </ul>
                     <!-- end of tabs links -->
 
-                    <!-- Tabs Content -->
+                    <!-- Baselines Content -->
                     <div class="tab-content" id="argoTabsContent">
                         <!-- Tab -->
                         <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
                             <div class="row">
+                                <div class="col-lg-5">
+                                    <style type="text/css">
+                                        .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;}
+                                        .tg td{background-color:#EBF5FF;border-bottom-width:1px;border-color:#9ABAD9;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                        .tg th{background-color:#409cff;border-bottom-width:1px;border-color:#9ABAD9;border-style:solid;border-top-width:1px;border-width:0px;color:#fff;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                        .tg .tg-cly1{text-align:left;vertical-align:middle}
+                                        .tg .tg-5lax{background-color:#D2E4FC;text-align:left;vertical-align:middle}
+                                        .tg .tg-hmp3{background-color:#D2E4FC;text-align:left;vertical-align:top}
+                                        .tg .tg-wn3b{background-color:#D2E4FC;text-align:center;vertical-align:middle}
+                                        .tg .tg-0lax{text-align:left;vertical-align:top}
+                                        </style>
+                                        <table class="tg">
+                                            <thead>
+                                              <tr>
+                                                <th class="tg-0lax">Baselines</th>
+                                                <th class="tg-0lax">Contexts</th>
+                                                <th class="tg-0lax">Pre@5</th>
+                                                <th class="tg-0lax">Pre@15</th>
+                                                <th class="tg-0lax">Rec@5</th>
+                                                <th class="tg-0lax">Rec@15</th>
+                                                <th class="tg-0lax">nDCG@5</th>
+                                                <th class="tg-0lax">nDCG@15</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td class="tg-wn3b" rowspan="7">GeoSoCa</td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-cly1" rowspan="7">FCFKDEAMC<br><br><br><br></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-5lax" rowspan="3">PFMMGM</td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                            </tbody>
+                                            </table>
+                                </div>
+                                <div class="col-lg-2">
+                                    </div>
+                                <div class="col-lg-5">
+                                    <style type="text/css">
+                                        .tg  {border-collapse:collapse;border-color:#9ABAD9;border-spacing:0;}
+                                        .tg td{background-color:#EBF5FF;border-bottom-width:1px;border-color:#9ABAD9;border-style:solid;border-top-width:1px;border-width:0px;color:#444;font-family:Arial, sans-serif;font-size:14px;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                        .tg th{background-color:#409cff;border-bottom-width:1px;border-color:#9ABAD9;border-style:solid;border-top-width:1px;border-width:0px;color:#fff;font-family:Arial, sans-serif;font-size:14px;font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+                                        .tg .tg-cly1{text-align:left;vertical-align:middle}
+                                        .tg .tg-5lax{background-color:#D2E4FC;text-align:left;vertical-align:middle}
+                                        .tg .tg-hmp3{background-color:#D2E4FC;text-align:left;vertical-align:top}
+                                        .tg .tg-wn3b{background-color:#D2E4FC;text-align:center;vertical-align:middle}
+                                        .tg .tg-0lax{text-align:left;vertical-align:top}
+                                        </style>
+                                        <table class="tg">
+                                            <thead>
+                                              <tr>
+                                                <th class="tg-0lax">Baselines</th>
+                                                <th class="tg-0lax">Contexts</th>
+                                                <th class="tg-0lax">Pre@5</th>
+                                                <th class="tg-0lax">Pre@15</th>
+                                                <th class="tg-0lax">Rec@5</th>
+                                                <th class="tg-0lax">Rec@15</th>
+                                                <th class="tg-0lax">nDCG@5</th>
+                                                <th class="tg-0lax">nDCG@15</th>
+                                              </tr>
+                                            </thead>
+                                            <tbody>
+                                              <tr>
+                                                <td class="tg-wn3b" rowspan="7">GeoSoCa</td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-cly1" rowspan="7">FCFKDEAMC<br><br><br><br></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-5lax" rowspan="3">PFMMGM</td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                                <td class="tg-0lax"></td>
+                                              </tr>
+                                              <tr>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                                <td class="tg-hmp3"></td>
+                                              </tr>
+                                            </tbody>
+                                            </table>
+                                </div>
+                            </div>
+<!--
+                            <div class="row">
                                 Source code is available at: &nbsp; <a href="https://bit.ly/39RKIrC" target="_blank">ContextsPOI/Codes</a>
                             </div>
-                        </div> <!-- end of row -->
+-->
+                        </div>
+                        <!-- end of row -->
                         <!-- Tab -->
                         <div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
                             <div class="row">
@@ -282,7 +656,55 @@
     </div> <!-- end of container -->
     <!-- end of description -->
     
-    <!-- Testimonials -->
+    <!-- Features -->
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="above-heading">
+                        Sources
+                    </div>
+                    <h2 class="h2-heading">Framework and Datasets</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Tabs Links -->
+                    <ul class="nav nav-tabs" id="argoTabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-list"></i>Framework</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-envelope-open-text"></i>Dataset</a>
+                        </li>
+                    </ul>
+                    <!-- end of tabs links -->
+
+                    <!-- Tabs Content -->
+                    <div class="tab-content" id="argoTabsContent">
+                        <!-- Tab -->
+                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                            <div class="row">
+                                Source code is available at: &nbsp; <a href="https://bit.ly/39RKIrC" target="_blank">ContextsPOI/Codes</a>
+                            </div>
+                        </div> <!-- end of row -->
+                        <!-- Tab -->
+                        <div class="tab-pane" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                            <div class="row">
+                                Datasets are available at: &nbsp; <a href="https://bit.ly/3ijTJyc" target="_blank">ContextsPOI/Datasets</a>
+                            </div>
+                        </div> <!-- end of row -->
+                          </div> <!-- end of tab-pane -->
+                </div> <!-- end of tab content -->
+                    <!-- end of tabs content -->
+             <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of features -->
+    
+    <!-- About Us -->
     <div id="about-us" class="slider-2">
         <div class="container">
                         <div class="row">
