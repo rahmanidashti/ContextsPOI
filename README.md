@@ -41,13 +41,13 @@ If you find **ContextsPOI** useful for your research or development, please cite
 }
 ```
 
-## TODOs
+<!-- ## TODOs
 - [X] The release of base models source codes
 - [X] Add context models to save the scores
 - [X] final version code release after the acceptance of the paper
 - [ ] Dataset characteristic will be added into the dataset readme file  
 - [ ] User behaviour analysis part will be available after the acceptance of the paper.
-- [ ] Add command-line run for the context models
+- [ ] Add command-line run for the context models -->
 
 
 ## Team
