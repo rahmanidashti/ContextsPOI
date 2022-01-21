@@ -33,11 +33,15 @@ pip install -r prerequisites.txt
 If you find **ContextsPOI** useful for your research or development, please cite the following [paper](https://arxiv.org/):
 
 ```
-@inproceedings{rahmani2021ContextsPOI,
+@article{rahmani2022context,
   title={A Systematic Analysis on the Impact of Contextual Information on Point-of-Interest Recommendation},
-  author={Hossein A. Rahmani, Mohammad Aliannejadi, Mitra Baratchi, Fabio Crestani},
-  booktitle={TBA},
-  year={2021}
+  author={Rahmani, Hossein A. and Aliannejadi, Mohammad and Baratchi, Mitra and Crestani, Fabio},
+  journal={ACM Transactions on Information Systems (TOIS)},
+  volume={-},
+  number={-},
+  pages={--},
+  year={2022},
+  publisher={ACM New York, NY}
 }
 ```
 
