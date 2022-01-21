@@ -60,5 +60,8 @@ If you find **ContextsPOI** useful for your research or development, please cite
 * Mitra Baratchi, ADA Research Group, Leiden University, The Netherlands (m.baratchi@liacs.leidenuniv.nl)
 * Fabio Crestani, IR-USI, Università della Svizzera italiana (USI), Switzerland (fabio.crestani@usi.ch)
 
+## Contact
+If you have any questions, do not hesitate to contact us at `rahmanidashti@gmail.com`, we will be happy to assist.
+
 ## Acknowledgements
 This work was in part supported by the Swiss State Secretariat for Education, Research and Innovation (SERI) mobility grant between Switzerland and Iran, and in part by the NWO (No. 016.Vidi.189.039 and No. 314-99-301).
