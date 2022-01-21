@@ -57,4 +57,4 @@ If you find **ContextsPOI** useful for your research or development, please cite
 * Fabio Crestani, IR-USI, Università della Svizzera italiana (USI), Switzerland (fabio.crestani@usi.ch)
 
 ## Acknowledgements
-TBA
+This work was in part supported by the Swiss State Secretariat for Education, Research and Innovation (SERI) mobility grant between Switzerland and Iran, and in part by the NWO (No. 016.Vidi.189.039 and No. 314-99-301).
