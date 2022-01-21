@@ -30,7 +30,7 @@ pip install -r prerequisites.txt
 ```
 
 ## Citation
-If you find **ContextsPOI** useful for your research or development, please cite the following [paper](https://arxiv.org/):
+If you find **ContextsPOI** useful for your research or development, please cite the following [paper](https://arxiv.org/pdf/2201.08150.pdf):
 
 ```
 @article{rahmani2022context,
